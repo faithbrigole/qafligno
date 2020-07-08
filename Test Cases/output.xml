@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200707 16:18:38.893" rpa="false">
+<suite id="s1" name="Sa Add User" source="C:\Users\Fligno-Laptop-005\Documents\Gitlab Repositories\gherkins test\Test Cases\sa_add_user.robot">
+<test id="s1-t1" name="Scenario: Create a user">
+<kw name="Given user is in Login Page">
+<kw name="Login Page" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200707 16:18:39.420" level="INFO">Opening browser 'chrome' to base url 'https://dev.nxtchecks.nxtform.com/'.</msg>
+<status status="PASS" starttime="20200707 16:18:39.419" endtime="20200707 16:18:53.799"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200707 16:18:53.800" endtime="20200707 16:18:56.394"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200707 16:19:01.397" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200707 16:18:56.395" endtime="20200707 16:19:01.397"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:18:39.418" endtime="20200707 16:19:01.397"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:18:39.418" endtime="20200707 16:19:01.397"></status>
+</kw>
+<kw name="And user enter Superadmin Credentials">
+<kw name="Superadmin Account" library="common">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="login-component"]/form/div[1]/input</arg>
+<arg>${superadmin}</arg>
+</arguments>
+<msg timestamp="20200707 16:19:01.399" level="INFO">Typing text 'globalchecksdeveloper@gmail.com' into text field '//*[@id="login-component"]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20200707 16:19:01.399" endtime="20200707 16:19:01.919"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="login-component"]/form/div[2]/input</arg>
+<arg>${sa_password}</arg>
+</arguments>
+<msg timestamp="20200707 16:19:01.920" level="INFO">Typing text 'qzRtC52' into text field '//*[@id="login-component"]/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20200707 16:19:01.919" endtime="20200707 16:19:02.107"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:19:01.398" endtime="20200707 16:19:02.107"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:19:01.398" endtime="20200707 16:19:02.107"></status>
+</kw>
+<kw name="When user click Login button">
+<kw name="Login Button" library="common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="login-component"]/form/div[3]/button</arg>
+</arguments>
+<msg timestamp="20200707 16:19:02.111" level="INFO">Clicking element '//*[@id="login-component"]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20200707 16:19:02.110" endtime="20200707 16:19:02.221"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:19:02.109" endtime="20200707 16:19:02.221"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:19:02.108" endtime="20200707 16:19:02.222"></status>
+</kw>
+<kw name="user should be directed to the Dashboard">
+<kw name="Dashboard" library="common">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200707 16:19:07.225" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200707 16:19:02.224" endtime="20200707 16:19:07.225"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Dashboard</arg>
+</arguments>
+<msg timestamp="20200707 16:19:07.251" level="INFO">Current page contains text 'Dashboard'.</msg>
+<status status="PASS" starttime="20200707 16:19:07.225" endtime="20200707 16:19:07.251"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:19:02.223" endtime="20200707 16:19:07.252"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:19:02.223" endtime="20200707 16:19:07.252"></status>
+</kw>
+<status status="PASS" starttime="20200707 16:18:39.415" endtime="20200707 16:19:07.253" critical="yes"></status>
+</test>
+<doc>Tenant Application Form</doc>
+<status status="PASS" starttime="20200707 16:18:38.896" endtime="20200707 16:19:07.258"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Sa Add User">Sa Add User</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200707 16:18:39.393" level="ERROR">Error in file 'C:\Users\Fligno-Laptop-005\Documents\Gitlab Repositories\gherkins test\Test Cases\sa_add_user.robot' on line 6: Resource file '..\admin_create_user.robot' does not exist.</msg>
+</errors>
+</robot>
