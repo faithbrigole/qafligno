@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200707 20:13:17.240" rpa="false">
+<suite id="s1" name="Controller" source="C:\Users\Fligno-Laptop-005\Documents\Gitlab Repositories\GC-NXTChecks-Automation\controller.robot">
+<test id="s1-t1" name="Scenario: Full Pass Testing">
+<kw name="Superadmin Pass Testing">
+<kw name="sa_download_batch_records">
+<msg timestamp="20200707 20:13:17.599" level="FAIL">No keyword with name 'sa_download_batch_records' found.</msg>
+<status status="FAIL" starttime="20200707 20:13:17.599" endtime="20200707 20:13:17.599"></status>
+</kw>
+<status status="FAIL" starttime="20200707 20:13:17.592" endtime="20200707 20:13:17.600"></status>
+</kw>
+<status status="FAIL" starttime="20200707 20:13:17.590" endtime="20200707 20:13:17.607" critical="yes">No keyword with name 'sa_download_batch_records' found.</status>
+</test>
+<doc>Tenant Application Form</doc>
+<status status="FAIL" starttime="20200707 20:13:17.243" endtime="20200707 20:13:17.611"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Controller">Controller</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200707 20:13:17.576" level="ERROR">Error in file 'C:\Users\Fligno-Laptop-005\Documents\Gitlab Repositories\GC-NXTChecks-Automation\controller.robot' on line 5: Resource file '..\test cases\sa_download_batch_records.robot' does not exist.</msg>
+</errors>
+</robot>
