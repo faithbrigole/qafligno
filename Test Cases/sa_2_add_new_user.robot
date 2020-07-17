@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Tenant Application Form
+Documentation       Dashboard - Add new user
 # Suite Teardown    Close Browser
 Library             Selenium2Library
 Resource            ../common.robot

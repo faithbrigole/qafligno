@@ -1,2 +1,0 @@
-# qafligno
-software QA

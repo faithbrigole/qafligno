@@ -2,7 +2,7 @@
 Documentation     Tenant Application Form
 # Suite Teardown    Close Browser
 Library             Selenium2Library
-Resource            ../test cases/sa_download_batch_records.robot
+Resource            {EXEDIR}/sa_download_batch_records.robot
 
 *** Test Cases ***
 Scenario: Full Pass Testing

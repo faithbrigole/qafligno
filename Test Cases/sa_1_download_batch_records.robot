@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Tenant Application Form
+Documentation       Dashboard - Download Batch Records
 # Suite Teardown    Close Browser
 Library             Selenium2Library
 Resource            ../common.robot
@@ -37,7 +37,7 @@ user should be directed to the Dashboard
 user navigate to Batch Records 
     Batch Record
 
- And user search for a Batch
+user search for a Batch
     Search Batch
 
 user click + icon (Show more Options)
